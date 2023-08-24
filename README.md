@@ -33,6 +33,9 @@ Having record of Picking, packing, and selling products from a warehouse.
 Reduction of product obsolescence and decay.
 Avoiding the out-of-stock situations.
 
+![image](https://github.com/YatharthChoudhary/Stock-Management-System/assets/94707176/b4b78d6b-af50-473e-bbf0-9e886b47dfdc)
+
+
 **************Existing System**************
 
 There are number of Inventory Management System available in the market. After doing my research, I have come to know that most of them are limited to few products. Some others are lacking in good UI.

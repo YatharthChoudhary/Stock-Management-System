@@ -2,7 +2,7 @@ import { MongoClient } from "mongodb";
 import { NextResponse } from "next/server";
 
 export async function GET(request) {
-    const uri = "mongodb+srv://mongodb:Hotspot1234@cluster0.usglxjj.mongodb.net/";
+    const uri = "MongoDB URI";
     const client = new MongoClient(uri);
 
     try {
@@ -26,7 +26,7 @@ export async function POST(request) {
 
         // Validate the incoming data here if needed
 
-        const uri = "mongodb+srv://mongodb:Hotspot1234@cluster0.usglxjj.mongodb.net/";
+        const uri = "MongoDB URI";
         const client = new MongoClient(uri);
 
         const database = client.db('stock');

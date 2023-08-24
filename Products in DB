@@ -1,0 +1,43 @@
+import { MongoClient } from "mongodb";
+import { NextResponse } from "next/server";
+
+export async function GET(request) {
+    const uri = "mongodb+srv://mongodb:Hotspot1234@cluster0.usglxjj.mongodb.net/";
+    const client = new MongoClient(uri);
+
+    try {
+        const database = client.db('stock');
+        const inventory = database.collection('inventory');
+        const query = {};
+        const products = await inventory.find(query).toArray();
+        return NextResponse.json({ success: true, products });
+    } catch (error) {
+        console.error("Error in GET request:", error);
+        return NextResponse.error("Internal Server Error", 500);
+    } finally {
+        await client.close();
+    }
+}
+
+export async function POST(request) {
+    try {
+        const body = await request.json();
+        console.log(body);
+
+        // Validate the incoming data here if needed
+
+        const uri = "mongodb+srv://mongodb:Hotspot1234@cluster0.usglxjj.mongodb.net/";
+        const client = new MongoClient(uri);
+
+        const database = client.db('stock');
+        const inventory = database.collection('inventory');
+        const query = {};
+        const product = await inventory.insertOne(body);
+        return NextResponse.json({ product, ok: true });
+    } catch (error) {
+        console.error("Error in POST request:", error);
+        return NextResponse.error("Internal Server Error", 500);
+    } finally {
+        await client.close();
+    }
+}

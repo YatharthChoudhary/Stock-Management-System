@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 export async function GET(request) {
   // Replace the uri string with your connection string.
-  const uri = "mongodb+srv://mongodb:Hotspot1234@cluster0.usglxjj.mongodb.net/";
+  const uri = "MongoDB URI";
 
   const client = new MongoClient(uri);
   try {

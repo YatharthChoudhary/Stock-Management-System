@@ -1,0 +1,25 @@
+import { MongoClient } from "mongodb";
+import { NextResponse } from "next/server";
+
+export async function GET(request) {
+  // Replace the uri string with your connection string.
+  const uri = "mongodb+srv://mongodb:Hotspot1234@cluster0.usglxjj.mongodb.net/";
+
+  const client = new MongoClient(uri);
+  try {
+    const database = client.db('YatharthDB');
+    const movies = database.collection('inventory');
+
+    // Define your query criteria here
+    const query = { title: "Back to the Future" };
+    const movie = await movies.find(query).toArray();
+
+    console.log(movie);
+
+    // Return the movie array directly
+    return NextResponse.json(movie);
+  } finally {
+    // Ensure the client closes when finished or if an error occurs
+    await client.close();
+  }
+}

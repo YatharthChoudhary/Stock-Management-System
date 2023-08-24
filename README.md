@@ -11,6 +11,9 @@ The accuracy in predicting the requirements of the next demand
 The accuracy in relating recipes to their respective constituents
 Ease of use when it comes to updating inventory levels and placing orders to vendors
 
+https://d3i71xaburhd42.cloudfront.net/c30aa59a1827054e62052c6cf363eb09f1088689/500px/2-Figure1-1.png
+
+
 ************Purpose of Inventory Management System Project************
 
 The Inventory Management System is a real-time inventory database capable of connecting multiple stores.  This can be used to track the inventory of a single store, or to manage the delivery of stock between several branches of a larger franchise.

@@ -11,7 +11,7 @@ The accuracy in predicting the requirements of the next demand
 The accuracy in relating recipes to their respective constituents
 Ease of use when it comes to updating inventory levels and placing orders to vendors
 
-https://d3i71xaburhd42.cloudfront.net/c30aa59a1827054e62052c6cf363eb09f1088689/500px/2-Figure1-1.png
+![image](https://github.com/YatharthChoudhary/Stock-Management-System/assets/94707176/2db41f8e-1e03-4366-bf1d-5b551972fab4)
 
 
 ************Purpose of Inventory Management System Project************

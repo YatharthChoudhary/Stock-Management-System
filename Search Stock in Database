@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 export async function GET(request) {
     const query = request.nextUrl.searchParams.get("query");
-    const uri = "mongodb+srv://mongodb:Hotspot1234@cluster0.usglxjj.mongodb.net/";
+    const uri = "MongoDB URI";
     const client = new MongoClient(uri);
 
     try {
